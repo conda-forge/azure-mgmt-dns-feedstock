@@ -1,5 +1,5 @@
 {% set name = "azure-mgmt-dns" %}
-{% set version = "3.0.0" %}
+{% set version = "8.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 6ecdf4e67d8eb5db593ec331e6d9f350616e77c31225c91d266605e03e63b37f
-  
+  sha256: d8379d4bb9194b81b79e5284d875fa6df80707346f2cbb5c5491a20f35266fd0
+
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Microsoft Azure DNS Managment Client Library for Python.'
+  summary: Microsoft Azure DNS Managment Client Library for Python.
 
 
 extra:
