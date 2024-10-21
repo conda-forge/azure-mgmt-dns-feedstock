@@ -1,14 +1,14 @@
 {% set name = "azure-mgmt-dns" %}
-{% set version = "3.0.0" %}
+{% set version = "8.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 6ecdf4e67d8eb5db593ec331e6d9f350616e77c31225c91d266605e03e63b37f
-  
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 627b9ea3df0bf78a895acadc5148dec84c2898063bfaabfff8b14baa983b596e
+
 build:
   noarch: python
   number: 0
