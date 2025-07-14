@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-mgmt-dns
-  version: 8.2.0
+  version: "9.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 627b9ea3df0bf78a895acadc5148dec84c2898063bfaabfff8b14baa983b596e
+  sha256: 89f8c4e467a94224b97bf16dd76d5bd616bf11cefe727f776618a57cc5486e37
 
 build:
   number: 0
